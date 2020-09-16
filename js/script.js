@@ -3,6 +3,19 @@ $(document).ready(
   function (){
 
     // Generare una griglia 6x6 (36 boxes), ad ogni click parte una richiesta AJAX che prende un numero random da 1 a 9 (scegliere API opportuna).
+
+    var container = '';
+
+    for (var x = 0; x < 6; x++){
+        container += '<div class="first">';
+        for (var y = 0; y < 6; y++){
+          container += '<div class="box"></div>';
+        }
+        container += '</div>';
+    }
+
+    $('.container').append(container);
+
     $(".box").click(function(){
 
       var clickBox = $(this);
