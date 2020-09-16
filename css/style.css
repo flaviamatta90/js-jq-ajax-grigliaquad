@@ -6,8 +6,9 @@
 
 .first{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
 }
 
 .box{
@@ -15,14 +16,17 @@
   height: 100px;
   margin: 30px 15px;
   text-align: center;
-  font-size: 23px;
+  font-size: 25px;
+  font-weight: bold;
   border: 1px solid black;
 }
 
 .yellow{
+  padding-top: 30px;
   background-color: yellow;
 }
 
 .green{
+  padding-top: 30px;
   background-color: green;
 }
