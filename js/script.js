@@ -24,6 +24,7 @@ $(document).ready(
             clickBox.addClass("green");
           }
 
+          clickBox.text(rispostaServer);
         }
 
       });
