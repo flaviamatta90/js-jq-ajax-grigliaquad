@@ -1,0 +1,16 @@
+// start
+$(document).ready(
+  function (){
+
+
+
+
+
+
+
+
+
+
+
+  }
+);
