@@ -20,6 +20,13 @@ $(document).ready(
 
       var clickBox = $(this);
 
+      // se ha gia cliccato nello stesso box
+      if (clickBox.hasClass('green') || clickBox.hasClass('yellow')){
+        alert("Hai gia cliccato su questo box");
+        return;
+      }
+
+      // chiamata ajax
       $.ajax(
       {
         url: "https://flynn.boolean.careers/exercises/api/random/int",
@@ -27,6 +34,8 @@ $(document).ready(
         "success": function (data, stato) {
           var rispostaServer = data.response;
           console.log(data.response);
+
+
 
         // Se è <= 5 il quadrato diventa giallo, se è > di 5 il quadrato diventa verde.
           if (rispostaServer <= 5){
